@@ -1,7 +1,7 @@
 {
-    "name": "vite",
-    "version": "0.0.0",
-    "homepage": "",
+    "name": "business",
+    "version": "1.0.0",
+    "homepage": "https://kevwhuang-business.netlify.app",
     "license": "GPL-3.0+",
     "author": "Kevin Huang",
     "scripts": {

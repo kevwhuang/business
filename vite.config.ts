@@ -17,17 +17,17 @@ const assets: string[] = [
 
 const manifest: Partial<ManifestOptions> = {
     background_color: '#000000',
-    description: '',
+    description: 'A simple mock directory PWA built using TypeScript, React, React Router and Zustand.',
     dir: 'ltr',
     display: 'standalone',
     lang: 'en',
-    name: 'vite',
+    name: 'business',
     orientation: 'any',
     scope: '/',
-    short_name: 'vite',
+    short_name: 'business',
     start_url: '/',
     theme_color: '#000000',
-    categories: [],
+    categories: ['business'],
     icons: [
         {
             purpose: 'any',
@@ -58,12 +58,12 @@ const vite: UserConfigExport = defineConfig({
     publicDir: 'public',
     root: process.cwd(),
     plugins: [
-        react(),
         VitePWA({
             manifest,
             registerType: 'autoUpdate',
             includeAssets: assets,
         }),
+        react(),
     ],
     build: {
         outDir: 'dist',
