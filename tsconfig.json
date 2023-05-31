@@ -1,0 +1,35 @@
+{
+    "include": [
+        "src",
+    ],
+    "compilerOptions": {
+        "allowImportingTsExtensions": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "jsx": "react-jsx",
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "target": "esnext",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext",
+            "webworker",
+        ],
+        "types": [
+            "vite/client",
+            "vite-plugin-pwa/client",
+        ],
+    },
+    "references": [
+        {
+            "path": "./tsconfig.node.json",
+        },
+    ],
+}

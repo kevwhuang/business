@@ -1,0 +1,53 @@
+{
+    "name": "vite",
+    "version": "0.0.0",
+    "homepage": "",
+    "license": "GPL-3.0+",
+    "author": "Kevin Huang",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "lint": "eslint src --ext ts,tsx",
+        "prebuild": "tsc",
+        "start": "vite preview",
+        "test": "vitest"
+    },
+    "dependencies": {
+        "@emotion/react": "*",
+        "@emotion/styled": "*",
+        "@mui/icons-material": "*",
+        "@mui/material": "*",
+        "axios": "*",
+        "cookie": "*",
+        "google-map-react": "*",
+        "react": "*",
+        "react-dom": "*",
+        "react-hook-form": "*",
+        "react-router-dom": "*",
+        "uuid": "*",
+        "zustand": "*"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "*",
+        "@testing-library/react": "*",
+        "@types/cookie": "*",
+        "@types/node": "*",
+        "@types/react": "*",
+        "@types/react-dom": "*",
+        "@types/react-router-dom": "*",
+        "@types/uuid": "*",
+        "@typescript-eslint/eslint-plugin": "*",
+        "@typescript-eslint/parser": "*",
+        "@vitejs/plugin-react-swc": "*",
+        "autoprefixer": "*",
+        "eslint": "*",
+        "eslint-plugin-react-hooks": "*",
+        "eslint-plugin-react-refresh": "*",
+        "jsdom": "*",
+        "sass": "*",
+        "typescript": "*",
+        "vite": "*",
+        "vite-plugin-pwa": "*",
+        "vitest": "*"
+    }
+}
