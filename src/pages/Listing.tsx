@@ -41,15 +41,15 @@ function Listing(): React.ReactElement {
     }(import.meta.env.VITE_KEY_GOOGLE, listing.address));
 
     return (
-        <>
-            <section className="listing">
+        <section className="listing">
+            <Map address={address} />
+            <div className="listing__details">
                 <p>{listing.name}</p>
                 <p>{formattedAddress}</p>
                 <p>{formattedCoordinates}</p>
                 <p>{listing.description[0].toUpperCase()}{listing.description.slice(1)}</p>
-            </section>
-            <Map address={address} />
-        </>
+            </div>
+        </section>
     );
 }
 

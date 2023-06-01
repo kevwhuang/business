@@ -26,30 +26,33 @@ function AddListing(): React.ReactElement {
         <form className="form" onSubmit={handleSubmit(onSubmit)}>
             <h3>Add Business</h3>
             <div className="form__input">
-                <label htmlFor="input--name">Name</label>
+                <label htmlFor="input--name"></label>
                 <input
                     id="input--name"
                     type="text"
+                    placeholder="name"
                     maxLength={50}
                     required
                     {...register('name')}
                 />
             </div>
             <div className="form__input">
-                <label htmlFor="input--description">Description</label>
+                <label htmlFor="input--description"></label>
                 <input
                     id="input--description"
                     type="text"
+                    placeholder="description"
                     maxLength={200}
                     required
                     {...register('description')}
                 />
             </div>
             <div className="form__input">
-                <label htmlFor="input--address">Address</label>
+                <label htmlFor="input--address"></label>
                 <input
                     id="input--address"
                     type="text"
+                    placeholder="address"
                     maxLength={100}
                     required
                     {...register('address')}

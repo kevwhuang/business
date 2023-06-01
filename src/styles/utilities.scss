@@ -1,0 +1,19 @@
+.container {
+    align-items: center;
+    background: linear-gradient(173deg, #046bed, #046bed 80%, #eee calc(80% + 1px), #eee 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 400px;
+    margin: auto;
+    max-width: 1280px;
+    position: relative;
+    top: -20px;
+
+    &.admin {
+        background: #046bed;
+        border-radius: 0 0 20px 20px;
+        grid-template-columns: 1fr;
+        height: 300px;
+        text-align: center;
+    }
+}

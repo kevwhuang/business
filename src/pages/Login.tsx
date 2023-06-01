@@ -15,14 +15,18 @@ function Login(): React.ReactElement {
     const { handleSubmit, register } = useForm<Login>({ shouldUseNativeValidation: true });
 
     function onSubmit(data: Login): void {
-        if (data.username !== 'admin' || data.password !== 'password') return;
+        if (data.username !== 'admin' || data.password !== 'password') {
+            window.alert('Invalid login. Please try again.');
+            return;
+        }
+
         login();
         navigate('/');
     }
 
     return (
         <form className="login" onSubmit={handleSubmit(onSubmit)}>
-            <h3>Log In</h3>
+            <h3>Login</h3>
             <div className="login__input">
                 <label htmlFor="input--username">Username</label>
                 <input

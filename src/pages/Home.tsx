@@ -11,8 +11,10 @@ function Home(): React.ReactElement {
 
     return (
         <>
-            <Info />
-            {admin && <AddListing />}
+            <div className={admin ? 'container' : 'container admin'}>
+                <Info />
+                {admin && <AddListing />}
+            </div>
             <Table />
         </>
     );

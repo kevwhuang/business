@@ -14,12 +14,16 @@ function Navbar(): React.ReactElement {
 
     return (
         <>
-            <nav className="navbar">
-                <h1>Business Directory</h1>
-                <Link to="/">Main</Link>
-                {admin ? <button onClick={logout}>Logout</button>
-                    : <button onClick={() => navigate('login')}>Login</button>}
-            </nav>
+            <div className="container-0">
+                <nav className="navbar">
+                    <h1>Business Directory</h1>
+                    <div className="navbar__links">
+                        <Link to="/">Main</Link>
+                        {admin ? <a onClick={logout}>Logout</a>
+                            : <a onClick={() => navigate('login')}>Login</a>}
+                    </div>
+                </nav>
+            </div>
             <Outlet />
         </>
     );

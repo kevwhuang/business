@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { v4 as uuid } from 'uuid';
 
 import useStore from '../hooks/useStore';
 
@@ -20,9 +21,10 @@ function Table(): React.ReactElement {
                 </li>
                 <li>Description</li>
                 <li>Address</li>
+                {admin && <li>Delete</li>}
             </ul>
             {listings.map(listing => (
-                <ul className="table__content" key={listing.id}>
+                <ul className="table__content" key={uuid()}>
                     <li>
                         <Link to={`listing/${listing.id}`}>{listing.name}</Link>
                     </li>

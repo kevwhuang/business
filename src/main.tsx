@@ -19,6 +19,7 @@ import NotFound from './pages/NotFound';
 import './styles/rectify.scss';
 import './styles/root.scss';
 import './styles/main.scss';
+import './styles/utilities.scss';
 import './styles/media.scss';
 
 const router: any = createBrowserRouter(createRoutesFromElements(

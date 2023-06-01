@@ -9,11 +9,11 @@ import {
     screen,
 } from '@testing-library/react';
 
-import Home from '../pages/Home';
+import Fallback from '../pages/Fallback';
 
 describe('Describe', () => {
     test('Test', () => {
-        render(<Home />);
+        render(<Fallback />);
         expect(document.body).toBeInTheDocument();
         screen.debug();
     });

@@ -16,9 +16,7 @@ function Map(props: Props): React.ReactElement {
     const ZOOM = '&zoom=14';
 
     return (
-        <div className="map">
-            <img src={`${BASE}?${KEY}${CENTER}${FORMAT}${MAPTYPE}${MARKERS}${SCALE}${SIZE}${ZOOM}`} />
-        </div>
+        <img src={`${BASE}?${KEY}${CENTER}${FORMAT}${MAPTYPE}${MARKERS}${SCALE}${SIZE}${ZOOM}`} />
     );
 }
 
