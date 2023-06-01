@@ -1,10 +1,6 @@
 import React from 'react';
 
-interface Props {
-    address: string,
-}
-
-function Map(props: Props): React.ReactElement {
+function Map(props: { address: string }): React.ReactElement {
     const BASE = 'https://maps.googleapis.com/maps/api/staticmap';
     const CENTER = `&center=${props.address.replaceAll('#', '')}`;
     const FORMAT = '&format=png';
@@ -16,7 +12,10 @@ function Map(props: Props): React.ReactElement {
     const ZOOM = '&zoom=14';
 
     return (
-        <img src={`${BASE}?${KEY}${CENTER}${FORMAT}${MAPTYPE}${MARKERS}${SCALE}${SIZE}${ZOOM}`} />
+        <img
+            src={`${BASE}?${KEY}${CENTER}${FORMAT}${MAPTYPE}${MARKERS}${SCALE}${SIZE}${ZOOM}`}
+            alt={props.address}
+        />
     );
 }
 
