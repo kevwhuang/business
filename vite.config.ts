@@ -16,7 +16,7 @@ const assets: string[] = [
 ];
 
 const manifest: Partial<ManifestOptions> = {
-    background_color: '#000000',
+    background_color: '#046bed',
     description: 'A simple mock directory PWA built using TypeScript, React, React Router and Zustand.',
     dir: 'ltr',
     display: 'standalone',
@@ -26,7 +26,7 @@ const manifest: Partial<ManifestOptions> = {
     scope: '/',
     short_name: 'business',
     start_url: '/',
-    theme_color: '#000000',
+    theme_color: '#046bed',
     categories: ['business'],
     icons: [
         {

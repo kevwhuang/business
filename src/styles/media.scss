@@ -29,6 +29,14 @@
         .form {
             margin: 30px auto;
             top: 0;
+
+            button {
+                width: 100%;
+            }
+
+            h3 {
+                text-align: center;
+            }
         }
 
         .info {
@@ -51,6 +59,7 @@
         }
 
         .navbar__links {
+            margin: auto;
             justify-content: center;
             width: 100vw;
         }
